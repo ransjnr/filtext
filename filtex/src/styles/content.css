@@ -8,7 +8,8 @@
     justify-content: space-between;
 }
 .header-title{
-    color: #526d82;
+    color: #6956E5;
+    font-size: 15px;
 }
 .header-activity{
     display: flex;
@@ -56,21 +57,35 @@
 /* card container */
  .card-container{
     display: flex;
-    gap: 20px;
+    gap: 100px;
     align-items: center;
     margin-top: 2em;
  }
- .card{
+ .card-1{
     flex: 1;
     background: #dde6ed;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    height: 25px;
+    height: 35px;
     transition: 0.5s ease-in-out;
+    font-size: 12px;
+ }
+ .card-2{
+    flex: 1;
+    background: #dde6ed;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 35px;
+    transition: 0.5s ease-in-out;
+    font-size: 12px;
  }
  .card:hover{
     transform: scale(1.04);
@@ -104,7 +119,7 @@
 }
 .hero h1{
     color: #6956E5;
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -123,9 +138,42 @@ form{
     justify-content: center;
     align-items: center;
     border: 2px dashed #6956E5;
-    height: 200px;
+    height: 150px;
     width: 100%;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 30px;
+}
+
+.uploaded-row{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 94%;
+    /* background-color: #dde6ed; */
+
+}
+.upload-content{
+    display: flex;
+    align-items: center;
+}
+.btn-extract{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    background: #6956E5;
+    color: #fff;
+}
+.btn-extract:hover{
+    background: #6956E5;
+    color: #dde6ed !important;
 }

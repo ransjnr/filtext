@@ -23,12 +23,13 @@
     display: flex;
     padding-right: 10px;
     align-items: center;
-    justify-content:space-between;
+    justify-content:center;
     transition: 0.3s ease-in-out;
 }
-.teacher-detail{
+.teacher-detail-1{
     display: flex;
     align-items: center;
+    margin-top: 180px;
     gap: 20px;
     color: #526d82;
 }

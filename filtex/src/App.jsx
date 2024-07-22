@@ -1,19 +1,19 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import Sidebar from './components/Sidebar'
-import Content from './components/Content'
-import Profile from './components/Profile'
 import "./App.css"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './components/Dashboard'
+// import Results from './components/Results';
 const App = () => {
   return (
-    <div className='dashboard'>
-    <Sidebar />
-    <div className="dashboard-content">
-      <Content />
-      <Profile />
-    </div>
-    </div>
-  )
+
+    <Router>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        {/* <Route path="/results" element={<Results />} /> */}
+      </Routes>
+    </Router>
+  );
 }
 
 export default App
