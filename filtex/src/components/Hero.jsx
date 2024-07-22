@@ -6,7 +6,7 @@ import '../styles/content.css'
 const Hero = () => {
   return (
     <div className="hero">
-      <h1>Hola, I'm <span>filtex</span></h1>
+      <h1>Hola, I'm <span>filtext</span></h1>
       <p>Let me help you summarize and extract key information from your document</p>
     </div>
   )

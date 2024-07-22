@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
     <div className="menu">
       <div className="logo">
-        <h2>filtex</h2>
+        <h2>filtext</h2>
       </div>
 
       <div className="menu-list">
