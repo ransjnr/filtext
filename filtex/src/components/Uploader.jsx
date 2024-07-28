@@ -11,28 +11,39 @@ const Upload = () => {
   const handleExtract = async () => {
     const formData = new FormData();
     const fileInput = document.querySelector(".input-field");
-    
+  
     if (fileInput.files[0]) {
       formData.append('file', fileInput.files[0]);
-
+  
       try {
-        const response = await fetch('http://localhost:5000/extract', { // Corrected URL
+        const response = await fetch('http://localhost:8000/upload/', { // Update the URL to match your FastAPI server
           method: 'POST',
           body: formData,
         });
-
+  
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-
+  
         const data = await response.json();
-        setExtractedText(data.text);
+        console.log(data.message); // Handle the response from FastAPI
+  
+        // Send another request to extract the information
+        const extractResponse = await fetch('http://localhost:8000/extract/', {
+          method: 'POST',
+        });
+  
+        if (!extractResponse.ok) {
+          throw new Error('Network response was not ok');
+        }
+  
+        const extractData = await extractResponse.json();
+        setExtractedText(extractData.text);
       } catch (error) {
-        console.error('Error extracting text:', error);
+        console.error('Error uploading file:', error);
       }
     }
   };
-
   return (
     <div className='main'>
       <form
