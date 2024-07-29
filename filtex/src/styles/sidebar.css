@@ -1,0 +1,72 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    height: 94vh;
+}
+
+.logo {
+    text-align: center;
+    padding: 20px;
+    color: #6956E5;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-list .item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    color: #27374d;
+}
+
+.menu-list .item:hover,
+.active {
+    background: #6956E5;
+    color: #dde6ed !important;
+}
+
+.horizontal-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #27374d;
+    font-size: 1.5rem;
+    margin-top: 5px 0; /* Add margin for spacing */
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filters h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6956E5;
+}
+
+.dropdown {
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.checkbox-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between checkboxes */
+}
